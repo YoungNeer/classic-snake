@@ -6,8 +6,8 @@ Remember those golden days when there was no internet and the only source of ent
 Anyways here's how it looks like:-
 
 <p align="center">
-<img src="screens/main.png"/>
-<img src="screens/demo.gif"/>
+<img src="screens/main.png" width=400 height=258/>
+<img src="screens/demo.gif" width=400 height=258/>
 </p>
 
 You control the snake with W,A,S,D keys (because controling with the arrow keys suck)
@@ -21,4 +21,8 @@ Provided you are not on a Windows (nothing would suck more than that), you execu
   ./snake
 ```
 
-And that's it!!
+And that's it!! Ofcourse you need to install SFML if you don't already have it.
+
+## Legal Business
+
+I found these images on internet thanks to Google. Now don't ask me which company is behind it? who is the artist? Cause I don't know that myself. It's painful but true. If these assets belong to you and you don't want them to be here then contact me and get them removed from here
