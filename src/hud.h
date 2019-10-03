@@ -1,16 +1,16 @@
 #ifndef HUD_H
 #define HUD_H
-#include "setup.h"
-#include "Window.h"
+#include "window.h"
 class HUD
 {
 private:
-    sf::Font mFont;
+
     sf::Text mScoreText;
     sf::Text mLivesText;
     sf::RectangleShape mRect;
 
 public:
+    sf::Font mFont;
     HUD();
     void setLives(sf::Int8 x);
     void setScore(sf::Int8 x);

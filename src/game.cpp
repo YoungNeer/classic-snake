@@ -1,8 +1,9 @@
 #include "game.h"
 
-
 Game::Game():
-    win("Hello",751,584),
+
+    win("Welcome to Snake",800,517),
+    menu(hud.mFont),
     world(),
     snake()
 {
@@ -18,14 +19,23 @@ void Game::handleInput(){}
 
 void Game::update(){
     win.update();
-    setSnakeDirection();
-    snake.update(hud);
-    world.update(snake,hud);
-    if (snake.hasLost())
-        snake.reset();
+    if (state==PLAY_STATE){
+        controlSnake();
+        snake.update(hud);
+        world.update(snake,hud);
+        if (snake.hasLost())
+            snake.reset();
+    }
+    else{
+        if (menu.update(win)){
+            state=PLAY_STATE;
+            win.setSize(751,584);
+        }
+        sf::sleep(sf::seconds(0.06));
+    }
 }
 
-void Game::setSnakeDirection(){
+void Game::controlSnake(){
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) and
             snake.getDirection()!=Direction::Down)
         snake.setDirection(Direction::Up);
@@ -42,9 +52,13 @@ void Game::setSnakeDirection(){
 
 void Game::render(){
     win.beginDraw();
-    world.render(win);
-    snake.render(win);
-    hud.render(win);
+    if (state==MAINMENU_STATE)
+        menu.render(win);
+    else{
+        world.render(win);
+        snake.render(win);
+        hud.render(win);
+    }
     win.endDraw();
 }
 

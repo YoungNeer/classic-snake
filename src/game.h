@@ -1,5 +1,6 @@
-#include "World.h"
 #ifndef GAME_H
+#include "mainmenu.h"
+#include "world.h"
 #define GAME_H
 
 class Game
@@ -9,11 +10,13 @@ private:
     sf::Sound startSound;
     sf::SoundBuffer startBuffer;
     float dt;
+    MainMenu menu;
     World world;
     HUD hud;
     Snake snake;
+    GameState state=MAINMENU_STATE;
 
-    void setSnakeDirection();
+    void controlSnake();
 public:
     Game();
     ~Game();

@@ -1,6 +1,5 @@
 #include "hud.h"
-#include "Window.h"
-#include "setup.h"
+#include "window.h"
 #ifndef SNAKE_H
 #define SNAKE_H
 #include <deque>
