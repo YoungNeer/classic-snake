@@ -4,11 +4,12 @@ Remember those golden days when there was no internet and the only source of ent
 
 **NOTE**: This is a snake game written in SFML when I was a beginner in SFML (i still am - lol), and so some practices might not be professional (please make an issue if that is the case)
 Anyways here's how it looks like:-
-
+<br>
 <p align="center">
 <img src="screens/main.png" width=400 height=258/>
 <img src="screens/demo.gif" width=400 height=258/>
 </p>
+<br>
 
 You control the snake with W,A,S,D keys (because controling with the arrow keys suck)
 
