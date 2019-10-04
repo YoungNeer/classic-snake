@@ -6,8 +6,8 @@ Remember those golden days when there was no internet and the only source of ent
 Anyways here's how it looks like:-
 <br>
 <p align="center">
-<img src="screens/main.png" width=400 height=258/><br>
-<img src="screens/demo.gif" width=400 height=258/>
+<img src="screens/main.png" width=450 height=308/><br>
+<img src="screens/demo.gif" width=450 height=308/>
 </p>
 <br>
 
