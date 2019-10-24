@@ -11,6 +11,19 @@ Anyways here's how it looks like:-
 </p>
 <br>
 
+# Rules
+
+- The snake survives on apples, each time it eats the apple it makes the snake grow and increases the score
+- There is no time interval within which the snake should eat the apple
+- Once the snake eats the apple, the apple is respawned at a random location
+- The snake has 3 lives
+- If the snake bites itself then it'd lose a life
+- The snake dies if it loses all its lives
+- If the snake hits the walls it dies at once
+- The snake is reborn after it dies
+
+# Controls
+
 You control the snake with W,A,S,D keys (because controling with the arrow keys suck)
 
 # How to build?
