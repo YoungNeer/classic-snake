@@ -24,7 +24,7 @@ Anyways here's how it looks like:-
 
 # Controls
 
-You control the snake with W,A,S,D keys (because controling with the arrow keys suck)
+You control the snake with <kbd>W</kbd>,<kbd>A</kbd>,<kbd>S</kbd>,<kbd>D</kbd> keys (because controlling with the arrow keys suck)
 
 # How to build?
 
